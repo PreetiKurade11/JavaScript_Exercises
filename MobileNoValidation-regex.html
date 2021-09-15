@@ -3,7 +3,7 @@
         <title> Mobile Number Validation using Regular Expressions</title>
         <script type="text/javascript"> 
            function validate(){
-               var text= document.getElementById("text1").value;
+               var text= document.getElementById("text2").value;
                var regx= /[7-9][0-9]{9}$/;
                if(regx.test(text)){
                    document.getElementById("lbtext").innerHTML="Valid";
@@ -22,7 +22,7 @@
         </script>
     </head>
     <body>
-       <input id="text1" placeholder="text1" type="text" /> <br>
+  
        <input id="text2" placeholder="mobileno" type="text" /> <br>
        <label id="lbtext" style="color:red; visibility: hidden;">Invalid</label>
        <br><br>
