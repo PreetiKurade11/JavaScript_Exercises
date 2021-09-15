@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Email Validations </title>
+        <script type="text/javascript"> 
+           function validate(){
+               var text= document.getElementById("text1").value;
+               var regx= /^([a-z A-Z]+)\.([a-z A-Z]+)@accelalpha.com$/;
+               if(regx.test(text)){
+                   document.getElementById("lbtext").innerHTML="Valid";
+                   document.getElementById("lbtext").style.visibility="visible";
+                   document.getElementById("lbtext").style.color="green";
+
+               }
+               else{
+                document.getElementById("lbtext").innerHTML="Invalid";
+                document.getElementById("lbtext").style.visibility="visible";
+                document.getElementById("lbtext").style.color="red";
+               }
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <form>
+       <input id="text1" placeholder="Email" type="text" /> <br>
+       <label id="lbtext" style="color:red; visibility: hidden;">Invalid</label>
+       <br><br>
+       <button onclick="validate()" type="button">Submit</button>
+    </form>
+   
+    </body>
+</html>

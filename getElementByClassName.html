@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> JS Query </title>
+        <script type="text/javascript"> 
+           function fn(){
+               var element= document.getElementsByClassName("mypara");
+               for(var i=0;i<element.length;i++){
+                   element[i].style.color="red";
+               }
+            }
+
+
+        </script>
+    </head>
+    <body>
+       <p class="mypara"> first p tag</p>
+       <p> second p tag</p>
+       <p class="mypara"> third p tag</p>
+       <p> fourth p tag</p>
+       <br><br>
+       <button onclick="fn()"> Click here </button>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> JS Query </title>
+        <script type="text/javascript"> 
+           function validate(){
+               var username= document.getElementById("uname");
+               var password= document.getElementById("pass");
+               if(username.value.trim() == ""){
+                 //  alert("Blank Username");
+                   username.style.border = "solid 3px red";
+                   document.getElementById("lbuser").style.visibility="visible";
+                   return false;
+               }
+               else if(password.value.trim() == ""){
+                   //alert("Blank Password");
+                   password.style.border = "solid 3px red";
+                   document.getElementById("lbuser").style.visibility="visible";
+                   return false;
+               }
+               else if(password.value.trim().length<5){
+                   alert("Password too short")
+                   return false;
+               }
+               else{
+                   return true;
+               }
+            }
+
+
+        </script>
+    </head>
+    <body>
+       <form onsubmit="return validate()" action="message.html">
+        <input id="uname" placeholder="Username" type="text"  />
+        <label id="lbuser" style="color:red; visibility: hidden;">Invalid</label><br><br>
+        <input id="pass" placeholder="Password" type="password" />
+        <label id="lbpass" style="color:red; visibility: hidden;">Invalid</label><br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    </body>
+</html>
