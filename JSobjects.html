@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Introduction to Objects </title>
+        <script type="text/javascript"> 
+          /* var Product={
+               prod_name : "Tv",
+               prod_brand : "Sony",
+               prod_model : "2020 Model",
+               price : 44900,
+
+               prod : function()
+               {
+                   document.write("<h3> This is a TV prod"</h3>);
+               }
+           }
+           
+         //Product.prod();
+               //document.write("<h3>"+Product.prod+"</h3>");
+
+            function prod(prod_name,prod_brand,prod_model,price){
+                this.prod_name = prod_name;
+                this.prod_brand = prod_brand;
+                this.prod_model = prod_model;
+                this.price = price;
+                this.prod = function(){
+                    document.write("<h3> This is a TV prod"</h3>);
+                }
+            }
+           var p1= new Prod("Soundbar","Mi","model",5899);
+           var p1= new Prod("Soundbar","Mi","model2",6000);
+           p1.prod();
+           document.write("<h3>"+p2.prod_name+"</h3>");
+           */
+           var Product={
+               prod_name : "Tv",
+               prod_brand : "Sony",
+               prod_model : "2020 Model",
+               price : 44900,
+
+               prod : function()
+               {
+                   document.write("<h3> This is a TV prod</h3>");
+               }
+           }
+           Product.color="Black";
+          // delete Product.price;
+          Product.price="45000";
+           document.write("<h3>"+typeof(Product.price)+"</h3>");
+
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>
