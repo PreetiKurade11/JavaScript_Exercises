@@ -13,3 +13,8 @@
     font-weight: bold;
     color: brown;
 }
+
+#div1{
+    border: 2px solid rebeccapurple;
+    padding: 10px;
+}
