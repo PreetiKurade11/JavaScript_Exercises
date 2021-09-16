@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title> DOM Manipulations-2 in jQuery </title>
+        <link rel="stylesheet" href="C:/Javascript/css/style.css"
+    </head>
+    <body>
+      <!-- <h3 class="header" id="firstH3"> First h3 tag </h3>
+       <h3 class="header"> Second h3 tag </h3>-->
+    
+       <h3> jQuery DOM Manipulations - 2 </h3>
+      
+       <button  id="append"> Append</button>
+       <button  id="after"> After </button>
+       <button  id="prepend"> Prepend </button>
+       <button  id="before"> Before </button>
+       <button  id="remove"> Remove </button>
+       <button  id="empty"> Empty </button>
+      
+
+       <div id="div1" class="divtag">
+           <p id="p1" value="para1" class="p1class"> 1st para in 1st div</p>
+           <p id="p2"> 2nd para in 1st div</p>
+       </div>
+       
+     
+       
+    </body>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>-->
+    
+    <script src="C:/Javascript/JS/jquery.js"></script> 
+    <script type="text/javascript"> 
+
+        $(document).ready(function(){
+
+            $("#append").click(function(){
+                $("#div1").append("<p>2nd para in 1st div</p>");
+            });
+
+            $("#after").click(function(){
+                $("#div1").after("<p>2nd para in 1st div</p>");
+            });
+
+            $("#prepend").click(function(){
+                $("#div1").prepend("<p>2nd para in 1st div</p>");
+            });
+
+            $("#before").click(function(){
+                $("#div1").before("<p>2nd para in 1st div</p>");
+            });
+
+            $("#remove").click(function(){
+               // $("#div1").remove();
+                $("p").remove("#p2");
+            });
+ 
+            $("#empty").click(function(){
+                $("#div1").empty();
+            });
+
+
+        });
+
+          
+    </script>
+
+</html>

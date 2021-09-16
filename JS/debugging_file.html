@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> Mobile Number Validation using Regular Expressions</title>
+        <script type="text/javascript"> 
+           function addvalues(){
+               var a= document.getElementById("text1").value;
+               var b= document.getElementById("text2").value;
+               document.getElementById("output").innerHTML="Result= " +(a+b);
+               console.log(a+b);
+            }
+
+
+        </script>
+    </head>
+    <body>
+       <input id="text1" placeholder="Text 1" type="text" /> <br><br>
+       <input id="text2" placeholder="Text 2" type="text" /> <br>
+       <label id="lbtext" style="color:red; visibility: hidden;">Invalid</label>
+       <br><br>
+       <button onclick="addvalues()" type="button">Add</button>
+       <h3 id="output">Result = </h3>
+    </body>
+</html>

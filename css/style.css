@@ -1,0 +1,15 @@
+.divtag{
+    border: 2px solid blueviolet;
+    margin: 5px;
+    padding: 10px;
+}
+
+.newdivclass{
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.newparaclass{
+    font-weight: bold;
+    color: brown;
+}
