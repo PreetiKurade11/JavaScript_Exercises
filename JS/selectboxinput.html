@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Input from Radio </title>
+        <script type="text/javascript"> 
+            function fn(){
+                var select = document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value)
+            }
+      </script>  
+    </head>
+    <body>
+        
+        <select id="selectbox">
+            <option value="India"> India </option>
+            <option value="Australia"> Australia </option>
+            <option value="Mexico"> Mexico </option>
+            <option value="Bulgaria"> Bulgaria </option>
+            <option value="Greece"> Greece </option> 
+        </select>
+
+        <button onclick="fn()" id="btn1"> Submit </button>
+
+    </body>
+</html>

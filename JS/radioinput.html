@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Input from Radio </title>
+        <script type="text/javascript"> 
+            function fn(){
+                var rd1=document.getElementById("rd1");
+                var rd2=document.getElementById("rd2");
+
+                if(rd1.checked==true){
+                    alert("Gender: "+rd1.value);
+                }
+                else if(rd2.checked==true){
+                    alert("Gender: "+rd2.value);
+                }
+                else if(rd3.checked==true){
+                    alert("Gender: "+rd3.value);
+                }
+                else{
+                    alert("No Value Selected");
+                }
+            }
+      </script>  
+    </head>
+    <body>
+        
+        <input id="rd1" name="grp1" type="radio" value="Female"> Female </input> <br><br>
+        <input id="rd2" name="grp1" type="radio" value="Female"> Male </input>  <br><br>
+        <input id="rd3" name="grp1" type="radio" value="Female"> Other </input>  <br><br>
+
+        <button onclick="fn()" id="btn1"> Submit </button>
+
+    </body>
+</html>
