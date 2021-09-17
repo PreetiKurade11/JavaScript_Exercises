@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> Resizable Interaction in jQuery UI </title>
+        <link rel="stylesheet" href="C:/Javascript/css/style.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.theme.css">
+    </head>
+    <body>
+      
+       <h3> Resizable Interaction in jQuery UI </h3>
+        <div id="div1">
+            <img id="resize" width="350px" height="350px" src="C:/Javascript/images/newimg.jpg" alt="">
+        </div>
+
+    </body>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>-->
+    
+    <script src="C:/Javascript/JS/jquery.js"></script> 
+    <script src="C:/Javascript/jquery-ui/jquery-ui.js"></script> 
+
+    <script type="text/javascript"> 
+      
+        $("#resize").resizable({
+           // maxWidth:500,
+           // maxHeight:500,
+            autoHide:true,
+           // distance: 200,
+           ghost: true,
+           aspectRatio: true,
+        });
+              
+    </script>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>  Autocomplete in jQuery UI </title>
+        <link rel="stylesheet" href="C:/Javascript/css/style.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <h3> Autocomplete in jQuery UI </h3>
+        <div id="div1" class="divtag">
+            <label><b>Enter your City</b></label>
+            <input type="text" name="" id="citytxtbox">
+        </div>
+ 
+    </body>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>-->
+    
+    <script src="C:/Javascript/JS/jquery.js" type="text/javascript"></script> 
+    <script src="C:/Javascript/jquery-ui/jquery-ui.js" type="text/javascript"></script> 
+
+    <script type="text/javascript"> 
+        
+        var cities=["Mumbai", "New Delhi", "Bnegaluru", "Hyderabad", "Pune", "Mysore", "Indore", "Chennai", "Kolkata", "Surat", "Lucknow", "Nagpur", "Madurai", "Nashik", "Ludhiana", "Gwalior", "Noida", "Amritsar"];
+        $("#citytxtbox").autocomplete({
+            source: cities
+        },
+        {
+            autoFocus: true,
+            delay: 100,
+            minLength: 1
+        });
+
+    </script>
+
+</html>
