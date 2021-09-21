@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>jQuery-UI addClass Effect</title>
+    <link rel="stylesheet" href="C:/Javascript/css/style.css">
+    <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="C:/Javascript/jquery-ui/jquery-ui.theme.css">
+
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: 10px; text-decoration: none; }
+    #effect { width: 240px;  padding: 10px; border: 1px solid #000; background: #eee; color: #333; }
+    .newClass { text-indent: 40px; letter-spacing: 8px; width: 410px; height: 120px; padding: 30px; margin: 10px; font-size: 10px; }
+  </style>
+
+</head>
+<body>
+    <div class="toggler">
+        <div id="effect" class="ui-corner-all">
+            This demo adds a class which animates: text-indent, letter-spacing, width, height, padding, margin, and font-size
+        </div>
+    </div>
+ 
+    <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+ 
+</body>
+
+
+<script src="C:/Javascript/JS/jquery.js"></script> 
+<script src="C:/Javascript/jquery-ui/jquery-ui.js"></script> 
+
+<script>
+    $( function() {
+      $( "#button" ).on( "click", function() {
+        $( "#effect" ).addClass( "newClass", 1000, callback );
+      });
+   
+      function callback() {
+        setTimeout(function() {
+          $( "#effect" ).removeClass( "newClass" );
+        }, 1500 );
+      }
+    } );
+    </script>
+</html>
