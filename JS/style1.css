@@ -17,9 +17,11 @@
 }
 
 .delete{
-    border: 0px; 
+ 
     height: 30px; 
-    width: 60px; 
+    width: 50px; 
+    color:black;
+    border: 0px;
     background-color: rgb(213, 188, 236);
 }
 
@@ -28,6 +30,7 @@
     height: 25px; 
     width: 50px; 
     margin-left:15px;
+    color: white;
     border: 0px; 
 }
 
@@ -39,14 +42,14 @@
 
 
 #btn1{
-    margin-left:100px;
+    margin-left:200px;
 }
 #btn2{
-    margin-left:40px;
+    margin-left:140px;
 }
 #btn3{
-    margin-left:97px;
+    margin-left:197px;
 }
 #btn4{
-    margin-left:125px;
+    margin-left:225px;
 }
