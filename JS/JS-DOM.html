@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">       
-        <link rel="stylesheet" href="C:/Javascript/JS/style1.css">
+  <head>
+    <meta charset="utf-8">
+    <link href="style1.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+    <script src="app.js"></script>
+    
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Bookorama</h1>
+          <p>Books for Poet</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li>
+                    <span class="name" value="Book Name"> Milk and Honey </span> 
+                    <span class="delete" id="btn1"> Delete</span>
+                    <span class="edit"> Edit</span>
+                </li><br>
+                
+                <li>
+                    <span class="name" > The Sun and Her Flowers </span>
+                    <span class="delete"  id="btn2" > Delete</span>
+                    <span class="edit" > Edit</span>
+                    
+                </li> <br>
+                
+                <li>
+                    <span class="name" > Pillow Thoughts </span> 
+                    <span class="delete" id="btn3" > Delete</span>
+                    <span class="edit"> Edit</span>
+                </li> <br>
+                
+                <li>
+                    <span class="name" > The Prophet </span>
+                    <span class="delete" id="btn4" > Delete</span>
+                    <span class="edit"> Edit</span>
+                </li><br>
+                <button class="deleteall" id="deleteall">Delete All</button>
+	    	</ul>
+            
+	    </div>
+	    <form id="add-book">
+            <br><br><br>
+	    	<input type="checkbox" id="hide" />
+	    	<label for="hide">Hide all books</label>
+            <input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
         
-        <title> JavaScript DOM Tutorials </title>     
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>
-                <div id="page-banner" >
-                    <h1 class="title"> Books </h1>
-                    <p> Books for poet </p>
-                    <a href="https://www.oprahdaily.com/entertainment/books/g27141414/poetry-books/"> link to other books </a>
-                    <form id="search-books">
-                        <input type="text" placeholder="Search Books..."/>
-                    </form>
-                </div>
-            </header>
-            <div id="book-list">
-                <h2 class="title">Books to Read</h2>
-                <ul>
-                    <li>
-                        <span class="name"> Milk and Honey </span> 
-                        <button class="delete" id="btn1"> Delete</button>
-                    </li><br>
 
-                    <li>
-                        <span class="name" > The Sun and Her Flowers </span>
-                        <button class="delete" id="btn2" > Delete</button>
-                    </li> <br>
-
-                    <li>
-                        <span class="name" > Pillow Thoughts </span> 
-                        <button class="delete" id="btn3" > Delete</button>
-                    </li> <br>
-
-                    <li>
-                        <span class="name" > The Prophet </span>
-                        <button class="delete" id="btn4" > Delete</button>
-                    </li><br>
-
-                </ul>
+        <div id="tabbed-content">
+            <ul class="tabs">
+              <li data-target="#about" class="active">About</li>
+              <li data-target="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+              <p>Content for about tab...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
             </div>
-            <form id="add-book">
-                <input type="text" placeholder="Add a book..."/>
-                <button id="addbtn"> ADD </button>
-            </form>
-        </div>
-        
-        <script type="text/javascript" src="C:/Javascript/JS/app.js" defer="defer"> </script>      
-    </body>
+            <div class="panel" id="contact">
+              <p>Content for contact tab...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+            </div>
+          </div>
+
+    </div>
+    
+  </body>
+  
 </html>
