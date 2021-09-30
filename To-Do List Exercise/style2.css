@@ -1,0 +1,174 @@
+body{
+    font-family: Tahoma;
+    color: #112031;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px #D4ECDD;
+    padding: 0 0 20px;
+    border: 1px solid #D4ECDD;
+}
+
+#page-banner{
+    background: #D4ECDD ;
+    padding: 10px;
+    display: block;
+    height: 200px;
+}
+
+
+
+#page-banner input{
+    display: block;
+   
+}
+
+h2{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#page-banner h1{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 80px;
+}
+
+
+
+#task-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li{
+    padding: 20px;
+    border-left: 5px solid #D4ECDD;
+    margin: 20px 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#task-list li:hover{
+    border-color: #345B63;
+}
+
+#input{
+    padding: 10px;
+    border: 0px;
+    background: white;
+    font-size: 16px; 
+    width:500px;
+}
+
+.edit{
+    float: right;
+    background: #345B63;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+
+.delete{
+    float: right;
+    background: #345B63;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.ui-icon-trash{
+    float: right;
+    background: #345B63;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete:hover{
+    background: #333;
+}
+
+
+#inputid{
+    margin-top: 50px;
+    margin-left: -50px;
+    margin: 40px 20px 20px 200px;
+    padding: 10px;
+    border: 1px solid #345B63;
+    font-size: 16px;
+    border-radius: 4px 0px 0px 4px;
+    width: 300px;
+    
+}
+
+
+
+.delall{
+    border: 1px solid #345B63;
+    background: #345B63;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 4px 4px 4px 4px;
+    color: white; 
+    margin-right: -90px;
+    margin-left:580px;
+    display: block;
+   margin-top: -40px;  
+
+}
+
+#add-task{
+    width: 900px;
+    margin:0;
+    border:none;
+}
+
+#addbtn{
+    border: 1px solid #345B63;
+    background: #345B63;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 0px 4px 4px 0px;
+    color: white; 
+    margin-left: 521px;
+    display: block;
+    margin-top: -60px;
+    
+
+}
+
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #D4ECDD;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #D4ECDD;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active{
+    display: block;
+}
+

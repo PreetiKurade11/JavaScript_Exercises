@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title> jQuery Selectors </title>
+        <link rel="stylesheet" href="C:/Javascript/Exercises/css/style.css"
+    </head>
+    <body>
+      <!-- <h3 class="header" id="firstH3"> First h3 tag </h3>
+       <h3 class="header"> Second h3 tag </h3>-->
+    
+       <h3> h3 tag </h3>
+       <p>para1 outside div tag</p>
+       <p>para2 outside div tag</p>
+       <div id="firstdiv" class="divtag">
+           <p>1st para in 1st div</p>
+           <p>2nd para in 1st div</p>
+       </div>
+       <div id="seconddiv" class="divtag">
+        <p>1st para in 2nd div</p>
+    </div>
+    <div id="thirddiv" class="divtag">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+       
+       <button onclick="fn1()" id="btn1"> Fade </button>
+    </body>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>-->
+    
+    <script src="C:/Javascript/Exercises/JS files/jquery.js"></script> 
+    <script type="text/javascript"> 
+          function fn1(){
+              //alert("working");
+                //$("#firstdiv,#seconddiv").fadeToggle(2000);
+                //$("#firstdiv,p,li").fadeToggle(2000);
+               // $("div > p").fadeToggle(2000);
+               //$("p:first").fadeToggle(2000);
+              //$(".divtag:first").fadeToggle(2000);
+              //$(".divtag:even").fadeToggle(2000);
+                $("li:even").fadeToggle(2000);
+
+          }
+    </script>
+
+</html>

@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> Themes in jQuery UI</title>
+        <link rel="stylesheet" href="C:/Javascript/Exercises/css/style.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui-RedmondTheme/jquery-ui.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui-RedmondTheme/jquery-ui.structure.css">
+        <link rel="stylesheet" href="C:/Javascript/jquery-ui-RedmondTheme/jquery-ui.theme.css">
+    </head>
+    <body>
+      
+       <h3> Themes in jQuery UI </h3>
+
+       <br>
+
+       <div id="dateinput" title="Calendar"> </div>   
+
+       <br><br> 
+
+       <div id="panels" style="width:80%">
+
+          <div>Javascript</div>
+          <div>JavaScript is one of the core technologies of web development and can be used on both the front-end and the back-end.</div>
+
+          <h3>jQuery</h3>
+          <p>jQuery is a JavaScript library which has cross browser compatibility
+            jQuery simplifies things from JavaScript like AJAX calls and DOM Manipulation</p>
+
+          <h3>Accordian</h3>
+          <p>Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.</p>
+        
+        </div> 
+        
+
+        <br><br>
+        
+        <div id="messagebox" title="Messagebox">
+          
+          <h3>MessageBox</h3>
+          <img src="C:/Javascript/Exercises/images/jquery.png" width="200px">
+
+        </div>
+
+    </body>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>-->
+    
+    <script src="C:/Javascript/Exercises/JS files/jquery.js"></script> 
+    <script src="C:/Javascript/jquery-ui-RedmondTheme/jquery-ui.js"></script> 
+
+    <script type="text/javascript"> 
+      $(document).ready(function(){
+
+        $("#dateinput").datepicker({
+           numberOfMonths: 1,
+           changeYear: true,
+           changeMonth: true,
+           showWeek: true,
+           weekHeader:"wk no",
+           showOtherMonths: true,
+           minDate: new Date(2017,0,1),
+           maxDate: new Date(2021,11,31)
+         });
+
+
+         $("#panels").accordion({
+               collapsible: true,
+               event:"mouseover",
+               animate: 1000,
+               active:0,
+               heightStyle: true,
+               icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+           });
+
+           
+           $("#messagebox").dialog({
+              title:"Custom Message Box",
+              draggable: true,
+              resizable: true,
+              height:250,
+              width:300,
+              modal: false,
+              position: {at:"left bottom"}
+           });
+
+           $("#actionbtn").click(function(){
+              
+            //getter method
+             // var msgboxheight = $("#messagebox").dialog("option","height");
+             // alert(msgboxheight);
+
+            //setter method
+              //$("#messagebox").dialog("option","height",300);
+              $("#dateinput").datepicker("option","numberOfMonths",2);
+
+           });
+
+      });
+         
+           
+    </script>
+
+</html>

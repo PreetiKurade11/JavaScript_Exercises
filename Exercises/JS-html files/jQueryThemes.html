@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title> Themes in jQuery </title>
+        <link rel="stylesheet" href="C:/Javascript/Exercises/css/style.css">
+        <link rel="stylesheet" href="C:/Javascript/jqueryUI/jquery-ui.css">
+        <link rel="stylesheet" href="C:/Javascript/jqueryUI/jquery-ui.structure.css">
+        <link rel="stylesheet" href="C:/Javascript/jqueryUI/jquery-ui.theme.css">
+    </head>
+    <body>
+        <h2> Themes in jQuery </h2>
+        <div id="dateinput" title="My Calendar">
+        </div>
+        <div id="messagebox" title="Messagebox">
+            <h3> title </h3>
+            <img src="C:/Javascript/Exercises/images/img.png" width="200px">
+        </div> <br>
+
+        <div id="panels" style="width:80%">
+            <div> Javascript</div>
+            <div><b>JavaScript</b> is the world's most popular programming language.</div>
+            <h3>jQuery</h3>
+            <p>jQuery is a fast, small, and feature-rich JavaScript library.
+                It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+            </p>
+            <h3> topics in jQuery </h3>
+            <p>Interactions, Widgets and Effects</p>
+        </div>
+    </body>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>-->
+    
+    <script src="C:/Javascript/Exercises/JS files/jquery.js"></script> 
+    <script src="C:/Javascript/jquery-ui/jquery-ui.js"></script> 
+
+    <script type="text/javascript"> 
+
+        $(document).ready(function(){
+           $("#dateinput").datepicker({
+                numerOfMonths: 1,
+                changeYear: true,
+                changeMonth: true,
+                showWeek: true,
+                weekHeader: "wk no",
+                showOtherMonths: tru,
+                minDate: new Date(2017, 0, 5),
+                maxDate: new Date(2022, 0,5)
+
+           });
+
+           $("#messagebox").dialog({
+               title: "Custom Message Box",
+               draggable: true,
+               resizable: true,
+               height: 300,
+               width: 300,
+               modal: false,
+
+           });
+
+           $("#panels").accordion({
+               collapsible: true,
+               event: "click",
+               animate: 300,
+               active: 0,
+               heightStyle: true,
+               icons: {header: "ui-icon-plus", activeHeader: "ui-icon-minus" }
+           });
+
+          
+            
+        });
+
+          
+    </script>
+
+</html>
